@@ -16,8 +16,9 @@
 		7137DD152537626700685970 /* uLektzSkillsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137DD142537626700685970 /* uLektzSkillsTests.swift */; };
 		7137DD202537626700685970 /* uLektzSkillsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137DD1F2537626700685970 /* uLektzSkillsUITests.swift */; };
 		7137DD312537A48200685970 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137DD302537A48200685970 /* SignUpViewController.swift */; };
-		7137DD722537DB5200685970 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137DD712537DB5200685970 /* ForgetPasswordViewController.swift */; };
 		7137DD772537E14B00685970 /* SignupOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137DD762537E14B00685970 /* SignupOTPViewController.swift */; };
+		713AB11025390E08000429CB /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AB10F25390E08000429CB /* SuccessViewController.swift */; };
+		713AB11525391324000429CB /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AB11425391324000429CB /* ForgetPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +54,9 @@
 		7137DD1F2537626700685970 /* uLektzSkillsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uLektzSkillsUITests.swift; sourceTree = "<group>"; };
 		7137DD212537626700685970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7137DD302537A48200685970 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		7137DD712537DB5200685970 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		7137DD762537E14B00685970 /* SignupOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupOTPViewController.swift; sourceTree = "<group>"; };
+		713AB10F25390E08000429CB /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		713AB11425391324000429CB /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +112,8 @@
 				7137DD012537626600685970 /* ViewController.swift */,
 				7137DD302537A48200685970 /* SignUpViewController.swift */,
 				7137DD762537E14B00685970 /* SignupOTPViewController.swift */,
-				7137DD712537DB5200685970 /* ForgetPasswordViewController.swift */,
+				713AB10F25390E08000429CB /* SuccessViewController.swift */,
+				713AB11425391324000429CB /* ForgetPasswordViewController.swift */,
 				7137DD032537626600685970 /* Main.storyboard */,
 				7137DD062537626700685970 /* Assets.xcassets */,
 				7137DD082537626700685970 /* LaunchScreen.storyboard */,
@@ -270,8 +273,9 @@
 				7137DD772537E14B00685970 /* SignupOTPViewController.swift in Sources */,
 				7137DD022537626600685970 /* ViewController.swift in Sources */,
 				7137DCFE2537626600685970 /* AppDelegate.swift in Sources */,
-				7137DD722537DB5200685970 /* ForgetPasswordViewController.swift in Sources */,
 				7137DD312537A48200685970 /* SignUpViewController.swift in Sources */,
+				713AB11525391324000429CB /* ForgetPasswordViewController.swift in Sources */,
+				713AB11025390E08000429CB /* SuccessViewController.swift in Sources */,
 				7137DD002537626600685970 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -62,4 +62,10 @@ class SignUpViewController: UIViewController {
         func tapFunction(sender:UITapGestureRecognizer) {
             print("tap working")
         }
+    
+    @IBAction func signUpOTPBtnAct(_ sender: Any)
+    {
+        let next = self.storyboard?.instantiateViewController(withIdentifier: "SignupOTPViewController") as! SignupOTPViewController
+        self.present(next, animated: true, completion:nil)
+    }
 }

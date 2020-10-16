@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
     
     var eyeIconClick = true
 
@@ -34,14 +34,34 @@ class ViewController: UIViewController {
           passwordTxtFld.layer.cornerRadius = 10.0
           loginBtn.layer.cornerRadius = 10.0
           createAccBtn.layer.cornerRadius = 10.0
-        emailTxtFld.leftView = UIView(frame: CGRect(x: 10, y: 0, width: 15, height: emailTxtFld.frame.height))
-        emailTxtFld.leftViewMode = .always
+          emailTxtFld.leftView = UIView(frame: CGRect(x: 10, y: 0, width: 15, height: emailTxtFld.frame.height))
+          emailTxtFld.leftViewMode = .always
         
-        passwordTxtFld.leftView = UIView(frame: CGRect(x: 10, y: 0, width: 15, height: passwordTxtFld.frame.height))
-        passwordTxtFld.leftViewMode = .always
+          passwordTxtFld.leftView = UIView(frame: CGRect(x: 10, y: 0, width: 15, height: passwordTxtFld.frame.height))
+          passwordTxtFld.leftViewMode = .always
 
 
         // Do any additional setup after loading the view.
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        }
+
+        @objc func keyboardWillShow(notification: NSNotification) {
+            if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+                if self.view.frame.origin.y == 0 {
+                    self.view.frame.origin.y -= keyboardSize.height
+                }
+            }
+        }
+
+        @objc func keyboardWillHide(notification: NSNotification) {
+            if self.view.frame.origin.y != 0 {
+                self.view.frame.origin.y = 0
+            }
+        }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
     @IBAction func eyeHideShowAct(_ sender: Any) {
@@ -62,5 +82,20 @@ class ViewController: UIViewController {
         self.present(next, animated: true, completion:nil)
     }
     
+    @IBAction func loginBtnAct(_ sender: Any)
+    {
+        if emailTxtFld.text == ""
+        {
+            
+        }
+        else if passwordTxtFld.text == ""
+        {
+            
+        }
+        else if emailTxtFld.text == "" && passwordTxtFld.text == ""
+        {
+            
+        }
+    }
 }
 
