@@ -84,18 +84,23 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func loginBtnAct(_ sender: Any)
     {
-        if emailTxtFld.text == ""
+         if emailTxtFld.text == "" && passwordTxtFld.text == ""
         {
-            
+            AlertControl.Instance.singleButtonAlert(inViewController: self, title: "uLektzSkills", message: "Please Enter Email and Password!", buttonTitle: "Ok", actionBlock: {})
+        }
+       else if emailTxtFld.text == ""
+        {
+            AlertControl.Instance.singleButtonAlert(inViewController: self, title: "uLektzSkills", message: "Please Enter Email Address!", buttonTitle: "Ok", actionBlock: {})
         }
         else if passwordTxtFld.text == ""
         {
-            
+            AlertControl.Instance.singleButtonAlert(inViewController: self, title: "uLektzSkills", message: "Please Enter Password!", buttonTitle: "Ok", actionBlock: {})
         }
-        else if emailTxtFld.text == "" && passwordTxtFld.text == ""
+        else
         {
             
         }
+       
     }
 }
 

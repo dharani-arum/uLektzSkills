@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34FFA7E8C2C1EA23AA4EB5D5 /* Pods_uLektzSkills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFE8EF6D258F141CE662C6A /* Pods_uLektzSkills.framework */; };
+		4D40E8CA9942D77BEF19B61C /* Pods_uLektzSkillsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E088D3CBF5C0C439E10B920 /* Pods_uLektzSkillsTests.framework */; };
 		7137DCFE2537626600685970 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137DCFD2537626600685970 /* AppDelegate.swift */; };
 		7137DD002537626600685970 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137DCFF2537626600685970 /* SceneDelegate.swift */; };
 		7137DD022537626600685970 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137DD012537626600685970 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 		7137DD772537E14B00685970 /* SignupOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137DD762537E14B00685970 /* SignupOTPViewController.swift */; };
 		713AB11025390E08000429CB /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AB10F25390E08000429CB /* SuccessViewController.swift */; };
 		713AB11525391324000429CB /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AB11425391324000429CB /* ForgetPasswordViewController.swift */; };
+		71C23BB2253A0488009A56AB /* AlertUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C23BB1253A0488009A56AB /* AlertUtility.swift */; };
+		F4A9B6DF177B0BE7D2D64627 /* Pods_uLektzSkills_uLektzSkillsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A515BAF43BA799642C550553 /* Pods_uLektzSkills_uLektzSkillsUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0054780DF35DC03682F833AD /* Pods-uLektzSkillsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uLektzSkillsTests.debug.xcconfig"; path = "Target Support Files/Pods-uLektzSkillsTests/Pods-uLektzSkillsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1CD24386D6286799E9210CCF /* Pods-uLektzSkillsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uLektzSkillsTests.release.xcconfig"; path = "Target Support Files/Pods-uLektzSkillsTests/Pods-uLektzSkillsTests.release.xcconfig"; sourceTree = "<group>"; };
 		7137DCFA2537626600685970 /* uLektzSkills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uLektzSkills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7137DCFD2537626600685970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7137DCFF2537626600685970 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +63,14 @@
 		7137DD762537E14B00685970 /* SignupOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupOTPViewController.swift; sourceTree = "<group>"; };
 		713AB10F25390E08000429CB /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		713AB11425391324000429CB /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		71C23BB1253A0488009A56AB /* AlertUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtility.swift; sourceTree = "<group>"; };
+		7316D5FE59C73C81640CD9E2 /* Pods-uLektzSkills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uLektzSkills.debug.xcconfig"; path = "Target Support Files/Pods-uLektzSkills/Pods-uLektzSkills.debug.xcconfig"; sourceTree = "<group>"; };
+		7D423FE4987B26A7BAAE1C6B /* Pods-uLektzSkills-uLektzSkillsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uLektzSkills-uLektzSkillsUITests.debug.xcconfig"; path = "Target Support Files/Pods-uLektzSkills-uLektzSkillsUITests/Pods-uLektzSkills-uLektzSkillsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E088D3CBF5C0C439E10B920 /* Pods_uLektzSkillsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uLektzSkillsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A515BAF43BA799642C550553 /* Pods_uLektzSkills_uLektzSkillsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uLektzSkills_uLektzSkillsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFF7C2343B7694CE1E56BC0C /* Pods-uLektzSkills.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uLektzSkills.release.xcconfig"; path = "Target Support Files/Pods-uLektzSkills/Pods-uLektzSkills.release.xcconfig"; sourceTree = "<group>"; };
+		C272723C32145AAD3394B3A7 /* Pods-uLektzSkills-uLektzSkillsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uLektzSkills-uLektzSkillsUITests.release.xcconfig"; path = "Target Support Files/Pods-uLektzSkills-uLektzSkillsUITests/Pods-uLektzSkills-uLektzSkillsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ECFE8EF6D258F141CE662C6A /* Pods_uLektzSkills.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uLektzSkills.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FFA7E8C2C1EA23AA4EB5D5 /* Pods_uLektzSkills.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D40E8CA9942D77BEF19B61C /* Pods_uLektzSkillsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +94,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A9B6DF177B0BE7D2D64627 /* Pods_uLektzSkills_uLektzSkillsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09468CA130BE0725B45385F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7316D5FE59C73C81640CD9E2 /* Pods-uLektzSkills.debug.xcconfig */,
+				AFF7C2343B7694CE1E56BC0C /* Pods-uLektzSkills.release.xcconfig */,
+				7D423FE4987B26A7BAAE1C6B /* Pods-uLektzSkills-uLektzSkillsUITests.debug.xcconfig */,
+				C272723C32145AAD3394B3A7 /* Pods-uLektzSkills-uLektzSkillsUITests.release.xcconfig */,
+				0054780DF35DC03682F833AD /* Pods-uLektzSkillsTests.debug.xcconfig */,
+				1CD24386D6286799E9210CCF /* Pods-uLektzSkillsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7137DCF12537626600685970 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +121,8 @@
 				7137DD132537626700685970 /* uLektzSkillsTests */,
 				7137DD1E2537626700685970 /* uLektzSkillsUITests */,
 				7137DCFB2537626600685970 /* Products */,
+				09468CA130BE0725B45385F5 /* Pods */,
+				87BDC7A118165BAD5216E200 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				7137DCFD2537626600685970 /* AppDelegate.swift */,
+				71C23BB1253A0488009A56AB /* AlertUtility.swift */,
 				7137DCFF2537626600685970 /* SceneDelegate.swift */,
 				7137DD012537626600685970 /* ViewController.swift */,
 				7137DD302537A48200685970 /* SignUpViewController.swift */,
@@ -140,6 +173,16 @@
 			path = uLektzSkillsUITests;
 			sourceTree = "<group>";
 		};
+		87BDC7A118165BAD5216E200 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECFE8EF6D258F141CE662C6A /* Pods_uLektzSkills.framework */,
+				A515BAF43BA799642C550553 /* Pods_uLektzSkills_uLektzSkillsUITests.framework */,
+				8E088D3CBF5C0C439E10B920 /* Pods_uLektzSkillsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7137DD242537626700685970 /* Build configuration list for PBXNativeTarget "uLektzSkills" */;
 			buildPhases = (
+				6E853657C2A35C378CDFFC9A /* [CP] Check Pods Manifest.lock */,
 				7137DCF62537626600685970 /* Sources */,
 				7137DCF72537626600685970 /* Frameworks */,
 				7137DCF82537626600685970 /* Resources */,
+				CC90A4D471D2CEB99F69BC3B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +209,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7137DD272537626700685970 /* Build configuration list for PBXNativeTarget "uLektzSkillsTests" */;
 			buildPhases = (
+				9A9893888D7124326E4114F2 /* [CP] Check Pods Manifest.lock */,
 				7137DD0C2537626700685970 /* Sources */,
 				7137DD0D2537626700685970 /* Frameworks */,
 				7137DD0E2537626700685970 /* Resources */,
@@ -182,9 +228,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7137DD2A2537626700685970 /* Build configuration list for PBXNativeTarget "uLektzSkillsUITests" */;
 			buildPhases = (
+				AED96DE9D68F02CEE88C5E95 /* [CP] Check Pods Manifest.lock */,
 				7137DD172537626700685970 /* Sources */,
 				7137DD182537626700685970 /* Frameworks */,
 				7137DD192537626700685970 /* Resources */,
+				AB57A619C319585F37753D3B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,12 +313,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6E853657C2A35C378CDFFC9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uLektzSkills-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A9893888D7124326E4114F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uLektzSkillsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB57A619C319585F37753D3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uLektzSkills-uLektzSkillsUITests/Pods-uLektzSkills-uLektzSkillsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uLektzSkills-uLektzSkillsUITests/Pods-uLektzSkills-uLektzSkillsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uLektzSkills-uLektzSkillsUITests/Pods-uLektzSkills-uLektzSkillsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AED96DE9D68F02CEE88C5E95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-uLektzSkills-uLektzSkillsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC90A4D471D2CEB99F69BC3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uLektzSkills/Pods-uLektzSkills-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-uLektzSkills/Pods-uLektzSkills-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-uLektzSkills/Pods-uLektzSkills-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7137DCF62537626600685970 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7137DD772537E14B00685970 /* SignupOTPViewController.swift in Sources */,
+				71C23BB2253A0488009A56AB /* AlertUtility.swift in Sources */,
 				7137DD022537626600685970 /* ViewController.swift in Sources */,
 				7137DCFE2537626600685970 /* AppDelegate.swift in Sources */,
 				7137DD312537A48200685970 /* SignUpViewController.swift in Sources */,
@@ -449,6 +601,7 @@
 		};
 		7137DD252537626700685970 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7316D5FE59C73C81640CD9E2 /* Pods-uLektzSkills.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -468,6 +621,7 @@
 		};
 		7137DD262537626700685970 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFF7C2343B7694CE1E56BC0C /* Pods-uLektzSkills.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -487,6 +641,7 @@
 		};
 		7137DD282537626700685970 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0054780DF35DC03682F833AD /* Pods-uLektzSkillsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +663,7 @@
 		};
 		7137DD292537626700685970 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CD24386D6286799E9210CCF /* Pods-uLektzSkillsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -529,6 +685,7 @@
 		};
 		7137DD2B2537626700685970 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D423FE4987B26A7BAAE1C6B /* Pods-uLektzSkills-uLektzSkillsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +705,7 @@
 		};
 		7137DD2C2537626700685970 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C272723C32145AAD3394B3A7 /* Pods-uLektzSkills-uLektzSkillsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
