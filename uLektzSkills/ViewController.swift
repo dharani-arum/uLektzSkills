@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+
 
 class ViewController: UIViewController,UITextFieldDelegate {
     
@@ -24,9 +26,8 @@ class ViewController: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myColor = UIColor.systemGray3
-          emailTxtFld.layer.borderColor = myColor.cgColor
-          passwordTxtFld.layer.borderColor = myColor.cgColor
+          emailTxtFld.layer.borderColor = Constants.myColor.cgColor
+          passwordTxtFld.layer.borderColor = Constants.myColor.cgColor
           emailTxtFld.layer.borderWidth = 1.0
           passwordTxtFld.layer.borderWidth = 1.0
         
@@ -98,9 +99,43 @@ class ViewController: UIViewController,UITextFieldDelegate {
         }
         else
         {
-            
+            let params = [
+               
+                "functionname":"login",
+                "email":emailTxtFld.text!,
+                "password":passwordTxtFld.text!,
+                "devicetype":"ios",
+                "type":""
+                
+               
+                ] as [String : Any]
+           
+                    
+            Alamofire.request(Constants.LOGIN, method: .post,parameters: params,encoding: JSONEncoding.default).responseJSON { (response) in
+                
+                if response.result.isSuccess {
+                    //let responseJSON = JSON(response.result.value!)
+                    let jsonResponse = response.result.value as! NSDictionary
+                    print(jsonResponse)
+
+                 //   let statusmsgStr = jsonResponse.value(forKey: "statusmsg") as! String
+                   
+                   // AlertControl.Instance.singleButtonAlert(inViewController: self, title: "uLektzSkills", message: statusmsgStr , buttonTitle: "Ok", actionBlock: {})
+
+//                    let next = self.storyboard?.instantiateViewController(withIdentifier: "ForgetPasswordViewController") as! ForgetPasswordViewController
+//                        next.CheckStr = "signUpOTPView"
+//                    self.present(next, animated: true, completion:nil)
+
+                }
+            }
         }
        
+    }
+    @IBAction func forgetPssBtnAct(_ sender: Any)
+    {
+        let next = self.storyboard?.instantiateViewController(withIdentifier: "ForgetEmailMobileViewController") as! ForgetEmailMobileViewController
+        
+        self.present(next, animated: true, completion:nil)
     }
 }
 

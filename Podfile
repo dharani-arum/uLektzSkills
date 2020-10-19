@@ -4,7 +4,11 @@
 target 'uLektzSkills' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'SCLAlertView' 
+  
+  pod 'SwiftyJSON'
+pod 'SCLAlertView'
+  pod 'Alamofire', '~> 4.5'
+
 
   # Pods for uLektzSkills
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		34FFA7E8C2C1EA23AA4EB5D5 /* Pods_uLektzSkills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFE8EF6D258F141CE662C6A /* Pods_uLektzSkills.framework */; };
 		4D40E8CA9942D77BEF19B61C /* Pods_uLektzSkillsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E088D3CBF5C0C439E10B920 /* Pods_uLektzSkillsTests.framework */; };
+		71062341253DF58F00F08616 /* ForgetEmailMobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71062340253DF58F00F08616 /* ForgetEmailMobileViewController.swift */; };
 		7137DCFE2537626600685970 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137DCFD2537626600685970 /* AppDelegate.swift */; };
 		7137DD002537626600685970 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137DCFF2537626600685970 /* SceneDelegate.swift */; };
 		7137DD022537626600685970 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137DD012537626600685970 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		713AB11025390E08000429CB /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AB10F25390E08000429CB /* SuccessViewController.swift */; };
 		713AB11525391324000429CB /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AB11425391324000429CB /* ForgetPasswordViewController.swift */; };
 		71C23BB2253A0488009A56AB /* AlertUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C23BB1253A0488009A56AB /* AlertUtility.swift */; };
+		71C23BC8253A1298009A56AB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C23BC7253A1298009A56AB /* Constant.swift */; };
 		F4A9B6DF177B0BE7D2D64627 /* Pods_uLektzSkills_uLektzSkillsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A515BAF43BA799642C550553 /* Pods_uLektzSkills_uLektzSkillsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,7 @@
 /* Begin PBXFileReference section */
 		0054780DF35DC03682F833AD /* Pods-uLektzSkillsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uLektzSkillsTests.debug.xcconfig"; path = "Target Support Files/Pods-uLektzSkillsTests/Pods-uLektzSkillsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1CD24386D6286799E9210CCF /* Pods-uLektzSkillsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uLektzSkillsTests.release.xcconfig"; path = "Target Support Files/Pods-uLektzSkillsTests/Pods-uLektzSkillsTests.release.xcconfig"; sourceTree = "<group>"; };
+		71062340253DF58F00F08616 /* ForgetEmailMobileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetEmailMobileViewController.swift; sourceTree = "<group>"; };
 		7137DCFA2537626600685970 /* uLektzSkills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uLektzSkills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7137DCFD2537626600685970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7137DCFF2537626600685970 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 		713AB10F25390E08000429CB /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		713AB11425391324000429CB /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		71C23BB1253A0488009A56AB /* AlertUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtility.swift; sourceTree = "<group>"; };
+		71C23BC7253A1298009A56AB /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		7316D5FE59C73C81640CD9E2 /* Pods-uLektzSkills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uLektzSkills.debug.xcconfig"; path = "Target Support Files/Pods-uLektzSkills/Pods-uLektzSkills.debug.xcconfig"; sourceTree = "<group>"; };
 		7D423FE4987B26A7BAAE1C6B /* Pods-uLektzSkills-uLektzSkillsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uLektzSkills-uLektzSkillsUITests.debug.xcconfig"; path = "Target Support Files/Pods-uLektzSkills-uLektzSkillsUITests/Pods-uLektzSkills-uLektzSkillsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E088D3CBF5C0C439E10B920 /* Pods_uLektzSkillsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uLektzSkillsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,17 +144,18 @@
 			isa = PBXGroup;
 			children = (
 				7137DCFD2537626600685970 /* AppDelegate.swift */,
-				71C23BB1253A0488009A56AB /* AlertUtility.swift */,
 				7137DCFF2537626600685970 /* SceneDelegate.swift */,
 				7137DD012537626600685970 /* ViewController.swift */,
 				7137DD302537A48200685970 /* SignUpViewController.swift */,
 				7137DD762537E14B00685970 /* SignupOTPViewController.swift */,
 				713AB10F25390E08000429CB /* SuccessViewController.swift */,
 				713AB11425391324000429CB /* ForgetPasswordViewController.swift */,
+				71062340253DF58F00F08616 /* ForgetEmailMobileViewController.swift */,
 				7137DD032537626600685970 /* Main.storyboard */,
 				7137DD062537626700685970 /* Assets.xcassets */,
 				7137DD082537626700685970 /* LaunchScreen.storyboard */,
 				7137DD0B2537626700685970 /* Info.plist */,
+				71C23BCC253A12A0009A56AB /* constantFile */,
 			);
 			path = uLektzSkills;
 			sourceTree = "<group>";
@@ -171,6 +176,15 @@
 				7137DD212537626700685970 /* Info.plist */,
 			);
 			path = uLektzSkillsUITests;
+			sourceTree = "<group>";
+		};
+		71C23BCC253A12A0009A56AB /* constantFile */ = {
+			isa = PBXGroup;
+			children = (
+				71C23BB1253A0488009A56AB /* AlertUtility.swift */,
+				71C23BC7253A1298009A56AB /* Constant.swift */,
+			);
+			path = constantFile;
 			sourceTree = "<group>";
 		};
 		87BDC7A118165BAD5216E200 /* Frameworks */ = {
@@ -423,6 +437,8 @@
 			files = (
 				7137DD772537E14B00685970 /* SignupOTPViewController.swift in Sources */,
 				71C23BB2253A0488009A56AB /* AlertUtility.swift in Sources */,
+				71062341253DF58F00F08616 /* ForgetEmailMobileViewController.swift in Sources */,
+				71C23BC8253A1298009A56AB /* Constant.swift in Sources */,
 				7137DD022537626600685970 /* ViewController.swift in Sources */,
 				7137DCFE2537626600685970 /* AppDelegate.swift in Sources */,
 				7137DD312537A48200685970 /* SignUpViewController.swift in Sources */,

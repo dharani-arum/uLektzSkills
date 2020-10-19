@@ -6,15 +6,21 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
-class SignupOTPViewController: UIViewController {
+class SignupOTPViewController: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var resendBtn: UIButton!
     @IBOutlet weak var informationLbl: UILabel!
     @IBOutlet weak var otpTxtFld: UITextField!
     
+    @IBOutlet weak var countLbl: UILabel!
     @IBOutlet weak var continueBtn: UIButton!
     
-    
+    var checkStr = String()
+    var emailStr = String()
+    var mobilenumberStr = String()
+    var nameStr = String()
     let yourAttributes: [NSAttributedString.Key: Any] = [
           .font: UIFont.systemFont(ofSize: 14),
           .foregroundColor: UIColor.link,
@@ -23,7 +29,6 @@ class SignupOTPViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let attributeString = NSMutableAttributedString(string: "Resend OTP",
                                                              attributes: yourAttributes)
         resendBtn.setAttributedTitle(attributeString, for: .normal)
@@ -36,20 +41,97 @@ class SignupOTPViewController: UIViewController {
         otpTxtFld.leftView = UIView(frame: CGRect(x: 10, y: 0, width: 15, height: otpTxtFld.frame.height))
         otpTxtFld.leftViewMode = .always
         
-        let Attributes1: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.black, .font: UIFont.systemFont(ofSize: 14)]
-        let Attributes2: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.red, .font: UIFont.systemFont(ofSize: 14)]
-        let Attributes3: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.red, .font: UIFont.systemFont(ofSize: 14)]
-
-        let partOne = NSMutableAttributedString(string: "One time password (OTP) has been sent to ", attributes: Attributes1)
-        let partTwo = NSMutableAttributedString(string: "number", attributes: Attributes2)
-        let partThree = NSMutableAttributedString(string: "Please enter the OTP and Continue.", attributes: Attributes3)
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SignUpViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        let mutableAttributedString = NSMutableAttributedString()
+       let appendStr = emailStr + " and " + mobilenumberStr
         
-        partTwo.append(partOne)
-        partThree.append(partTwo)
-        self.informationLbl.attributedText = partTwo
+        let Attributes1: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.darkGray, .font: UIFont.systemFont(ofSize: 14)]
+        let Attributes2: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.black, .font: UIFont.systemFont(ofSize: 14)]
+        let Attributes3: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.darkGray, .font: UIFont.systemFont(ofSize: 14)]
+
+        let partOne = NSMutableAttributedString(string: "One time password (OTP) has been sent to  ", attributes: Attributes1)
+        let partTwo = NSMutableAttributedString(string: appendStr, attributes: Attributes2)
+        let partThree = NSMutableAttributedString(string: "  Please enter the OTP and Continue.", attributes: Attributes3)
+        mutableAttributedString.append(partOne)
+        mutableAttributedString.append(partTwo)
+        mutableAttributedString.append(partThree)
+
+        self.informationLbl.attributedText = mutableAttributedString
 
         // Do any additional setup after loading the view.
     }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+
+
+
+        if range.location == 0
+        {
+            self.countLbl.text = "1/5"
+        }
+        else if range.location == 1
+        {
+            self.countLbl.text = "2/5"
+        }
+       else if range.location == 2
+        {
+            self.countLbl.text = "3/5"
+        }
+        else if range.location == 3
+        {
+            self.countLbl.text = "4/5"
+        }
+        else
+        {
+            self.countLbl.text = "5/5"
+        }
+        return range.location < 5
+    }
+    @IBAction func continueBtnAct(_ sender: Any)
+    {
+   
+        if otpTxtFld.text == ""
+           {
+            AlertControl.Instance.singleButtonAlert(inViewController: self, title: "uLektzSkills", message: "Please Enter OTP!", buttonTitle: "Ok", actionBlock: {})
+           }
+           else
+           {
+            let params = [
+                "functionName":"signupVerifyOtp",
+                "email":emailStr,
+                "mobile_no":mobilenumberStr,
+                "otp":otpTxtFld.text!
+               
+                ] as [String : Any]
+           
+                    
+            Alamofire.request(Constants.LOGIN, method: .post,parameters: params,encoding: JSONEncoding.default).responseJSON { (response) in
+                
+                if response.result.isSuccess {
+                    //let responseJSON = JSON(response.result.value!)
+                    let jsonResponse = response.result.value as! NSDictionary
+                    print(jsonResponse)
+
+                    let statusmsgStr = jsonResponse.value(forKey: "statusmsg") as! String
+                   
+                    AlertControl.Instance.singleButtonAlert(inViewController: self, title: "uLektzSkills", message: statusmsgStr , buttonTitle: "Ok", actionBlock: {})
+                   if statusmsgStr == "Otp Sent Successfully"
+                    {
+                    let next = self.storyboard?.instantiateViewController(withIdentifier: "ForgetPasswordViewController") as! ForgetPasswordViewController
+                        next.CheckStr = "signUpOTPView"
+                    self.present(next, animated: true, completion:nil)
+                    }
+                }
+            }
+            
+           }
+        }
+    
+    
     
 
     /*

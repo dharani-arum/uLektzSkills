@@ -16,6 +16,10 @@ class SuccessViewController: UIViewController {
     }
     
 
+    @IBAction func loginBtnAct(_ sender: Any)
+    {
+        
+    }
     /*
     // MARK: - Navigation
 
