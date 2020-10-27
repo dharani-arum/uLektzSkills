@@ -3,4 +3,86 @@
    uuid = "B58D08A4-C45E-4D8D-AC68-AB9CFD1986CD"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "43CBD079-081C-4EAE-BB01-3F74DBCA915E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "uLektzSkills/Controllers/CourseDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0FC2D2DC-72AF-4DA8-912F-2227A8BE33B1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "uLektzSkills/Controllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "loginBtnAct(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BDBA9F0D-69B6-4662-85BE-A3FF8A06F2B5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "uLektzSkills/Controllers/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "loginBtnAct(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BDBA9F0D-69B6-4662-85BE-A3FF8A06F2B5 - c56bc82de8b36faf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #5 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in uLektzSkills.ViewController.loginBtnAct(Any) -&gt; ()"
+                  moduleName = "uLektzSkills"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lingeswaranr/Desktop/uLektzSkills/uLektzSkills/Controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "1555">
+               </Location>
+               <Location
+                  uuid = "BDBA9F0D-69B6-4662-85BE-A3FF8A06F2B5 - c56bc82de8b36faf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #5 (Alamofire.DataResponse&lt;Any&gt;) -&gt; () in uLektzSkills.ViewController.loginBtnAct(Any) -&gt; ()"
+                  moduleName = "uLektzSkills"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lingeswaranr/Desktop/uLektzSkills/uLektzSkills/Controllers/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "142"
+                  endingLineNumber = "142"
+                  offsetFromSymbolStart = "1665">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -10,6 +10,20 @@
 		34FFA7E8C2C1EA23AA4EB5D5 /* Pods_uLektzSkills.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFE8EF6D258F141CE662C6A /* Pods_uLektzSkills.framework */; };
 		4D40E8CA9942D77BEF19B61C /* Pods_uLektzSkillsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E088D3CBF5C0C439E10B920 /* Pods_uLektzSkillsTests.framework */; };
 		71062341253DF58F00F08616 /* ForgetEmailMobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71062340253DF58F00F08616 /* ForgetEmailMobileViewController.swift */; };
+		7106234B253E24FE00F08616 /* LoginRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71062347253E24FD00F08616 /* LoginRootClass.swift */; };
+		7106234C253E24FE00F08616 /* LoginUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71062348253E24FD00F08616 /* LoginUserInfo.swift */; };
+		7106234D253E24FE00F08616 /* LoginMycourseid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71062349253E24FE00F08616 /* LoginMycourseid.swift */; };
+		7106234E253E24FE00F08616 /* LoginInstitution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7106234A253E24FE00F08616 /* LoginInstitution.swift */; };
+		713627202543A67700ADEB27 /* courseDetailsTopic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713627162543A67400ADEB27 /* courseDetailsTopic.swift */; };
+		713627212543A67700ADEB27 /* courseDetailsFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713627172543A67500ADEB27 /* courseDetailsFile.swift */; };
+		713627222543A67700ADEB27 /* courseDetailsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713627182543A67500ADEB27 /* courseDetailsResult.swift */; };
+		713627232543A67700ADEB27 /* courseDetailsAssessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713627192543A67500ADEB27 /* courseDetailsAssessment.swift */; };
+		713627242543A67700ADEB27 /* courseDetailsCourseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7136271A2543A67600ADEB27 /* courseDetailsCourseDetail.swift */; };
+		713627252543A67700ADEB27 /* courseDetailsReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7136271B2543A67600ADEB27 /* courseDetailsReport.swift */; };
+		713627262543A67700ADEB27 /* courseDetailsAssessmentJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7136271C2543A67600ADEB27 /* courseDetailsAssessmentJson.swift */; };
+		713627272543A67700ADEB27 /* courseDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7136271D2543A67600ADEB27 /* courseDetailsModel.swift */; };
+		713627282543A67700ADEB27 /* courseDetailsOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7136271E2543A67700ADEB27 /* courseDetailsOption.swift */; };
+		713627292543A67700ADEB27 /* courseDetailsOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7136271F2543A67700ADEB27 /* courseDetailsOutput.swift */; };
 		7137DCFE2537626600685970 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137DCFD2537626600685970 /* AppDelegate.swift */; };
 		7137DD002537626600685970 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137DCFF2537626600685970 /* SceneDelegate.swift */; };
 		7137DD022537626600685970 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137DD012537626600685970 /* ViewController.swift */; };
@@ -22,8 +36,28 @@
 		7137DD772537E14B00685970 /* SignupOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7137DD762537E14B00685970 /* SignupOTPViewController.swift */; };
 		713AB11025390E08000429CB /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AB10F25390E08000429CB /* SuccessViewController.swift */; };
 		713AB11525391324000429CB /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713AB11425391324000429CB /* ForgetPasswordViewController.swift */; };
+		715245A62540A14900D1C75D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715245A52540A14900D1C75D /* SettingsViewController.swift */; };
+		715245AB2540A4B100D1C75D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715245AA2540A4B100D1C75D /* AccountViewController.swift */; };
+		715245B32540C17000D1C75D /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715245B22540C17000D1C75D /* NotificationViewController.swift */; };
+		715245BC2540F5A800D1C75D /* MixedCourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715245B82540F5A700D1C75D /* MixedCourseModel.swift */; };
+		715245BD2540F5A800D1C75D /* MixedCourseLiveCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715245B92540F5A700D1C75D /* MixedCourseLiveCourse.swift */; };
+		715245BE2540F5A800D1C75D /* MixedCourseNewRelease.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715245BA2540F5A700D1C75D /* MixedCourseNewRelease.swift */; };
+		715245BF2540F5A800D1C75D /* MixedCourseFreeCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715245BB2540F5A700D1C75D /* MixedCourseFreeCourse.swift */; };
+		715245C72540F92300D1C75D /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715245C62540F92300D1C75D /* CustomCollectionViewCell.swift */; };
+		715245CC2541196500D1C75D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715245CB2541196500D1C75D /* SearchViewController.swift */; };
+		7154BCB0253F4CA800A08B19 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7154BCAF253F4CA800A08B19 /* HomeViewController.swift */; };
+		71618DD82541FEF700278AE4 /* CourseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71618DD72541FEF700278AE4 /* CourseDetailViewController.swift */; };
 		71C23BB2253A0488009A56AB /* AlertUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C23BB1253A0488009A56AB /* AlertUtility.swift */; };
 		71C23BC8253A1298009A56AB /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C23BC7253A1298009A56AB /* Constant.swift */; };
+		71FEE159253F5A530017C0BB /* MycartCartInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEE155253F5A530017C0BB /* MycartCartInfo.swift */; };
+		71FEE15A253F5A530017C0BB /* MycartResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEE156253F5A530017C0BB /* MycartResult.swift */; };
+		71FEE15B253F5A530017C0BB /* MycartOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEE157253F5A530017C0BB /* MycartOutput.swift */; };
+		71FEE15C253F5A530017C0BB /* MycartRootClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEE158253F5A530017C0BB /* MycartRootClass.swift */; };
+		71FEE161253F78050017C0BB /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEE160253F78050017C0BB /* CartViewController.swift */; };
+		71FEE166253F7E2B0017C0BB /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEE165253F7E2B0017C0BB /* CartTableViewCell.swift */; };
+		71FEE181253FB7100017C0BB /* MyCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEE180253FB7100017C0BB /* MyCourseViewController.swift */; };
+		71FEE18B253FBA610017C0BB /* MycourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEE189253FBA610017C0BB /* MycourseModel.swift */; };
+		71FEE18C253FBA610017C0BB /* MycourseSkillInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FEE18A253FBA610017C0BB /* MycourseSkillInfo.swift */; };
 		F4A9B6DF177B0BE7D2D64627 /* Pods_uLektzSkills_uLektzSkillsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A515BAF43BA799642C550553 /* Pods_uLektzSkills_uLektzSkillsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +82,20 @@
 		0054780DF35DC03682F833AD /* Pods-uLektzSkillsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uLektzSkillsTests.debug.xcconfig"; path = "Target Support Files/Pods-uLektzSkillsTests/Pods-uLektzSkillsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1CD24386D6286799E9210CCF /* Pods-uLektzSkillsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uLektzSkillsTests.release.xcconfig"; path = "Target Support Files/Pods-uLektzSkillsTests/Pods-uLektzSkillsTests.release.xcconfig"; sourceTree = "<group>"; };
 		71062340253DF58F00F08616 /* ForgetEmailMobileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetEmailMobileViewController.swift; sourceTree = "<group>"; };
+		71062347253E24FD00F08616 /* LoginRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRootClass.swift; sourceTree = "<group>"; };
+		71062348253E24FD00F08616 /* LoginUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUserInfo.swift; sourceTree = "<group>"; };
+		71062349253E24FE00F08616 /* LoginMycourseid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginMycourseid.swift; sourceTree = "<group>"; };
+		7106234A253E24FE00F08616 /* LoginInstitution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInstitution.swift; sourceTree = "<group>"; };
+		713627162543A67400ADEB27 /* courseDetailsTopic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseDetailsTopic.swift; sourceTree = "<group>"; };
+		713627172543A67500ADEB27 /* courseDetailsFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseDetailsFile.swift; sourceTree = "<group>"; };
+		713627182543A67500ADEB27 /* courseDetailsResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseDetailsResult.swift; sourceTree = "<group>"; };
+		713627192543A67500ADEB27 /* courseDetailsAssessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseDetailsAssessment.swift; sourceTree = "<group>"; };
+		7136271A2543A67600ADEB27 /* courseDetailsCourseDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseDetailsCourseDetail.swift; sourceTree = "<group>"; };
+		7136271B2543A67600ADEB27 /* courseDetailsReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseDetailsReport.swift; sourceTree = "<group>"; };
+		7136271C2543A67600ADEB27 /* courseDetailsAssessmentJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseDetailsAssessmentJson.swift; sourceTree = "<group>"; };
+		7136271D2543A67600ADEB27 /* courseDetailsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseDetailsModel.swift; sourceTree = "<group>"; };
+		7136271E2543A67700ADEB27 /* courseDetailsOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseDetailsOption.swift; sourceTree = "<group>"; };
+		7136271F2543A67700ADEB27 /* courseDetailsOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = courseDetailsOutput.swift; sourceTree = "<group>"; };
 		7137DCFA2537626600685970 /* uLektzSkills.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uLektzSkills.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7137DCFD2537626600685970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7137DCFF2537626600685970 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,8 +114,28 @@
 		7137DD762537E14B00685970 /* SignupOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupOTPViewController.swift; sourceTree = "<group>"; };
 		713AB10F25390E08000429CB /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		713AB11425391324000429CB /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		715245A52540A14900D1C75D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		715245AA2540A4B100D1C75D /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		715245B22540C17000D1C75D /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		715245B82540F5A700D1C75D /* MixedCourseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixedCourseModel.swift; sourceTree = "<group>"; };
+		715245B92540F5A700D1C75D /* MixedCourseLiveCourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixedCourseLiveCourse.swift; sourceTree = "<group>"; };
+		715245BA2540F5A700D1C75D /* MixedCourseNewRelease.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixedCourseNewRelease.swift; sourceTree = "<group>"; };
+		715245BB2540F5A700D1C75D /* MixedCourseFreeCourse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MixedCourseFreeCourse.swift; sourceTree = "<group>"; };
+		715245C62540F92300D1C75D /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		715245CB2541196500D1C75D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		7154BCAF253F4CA800A08B19 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		71618DD72541FEF700278AE4 /* CourseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailViewController.swift; sourceTree = "<group>"; };
 		71C23BB1253A0488009A56AB /* AlertUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUtility.swift; sourceTree = "<group>"; };
 		71C23BC7253A1298009A56AB /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		71FEE155253F5A530017C0BB /* MycartCartInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MycartCartInfo.swift; sourceTree = "<group>"; };
+		71FEE156253F5A530017C0BB /* MycartResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MycartResult.swift; sourceTree = "<group>"; };
+		71FEE157253F5A530017C0BB /* MycartOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MycartOutput.swift; sourceTree = "<group>"; };
+		71FEE158253F5A530017C0BB /* MycartRootClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MycartRootClass.swift; sourceTree = "<group>"; };
+		71FEE160253F78050017C0BB /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		71FEE165253F7E2B0017C0BB /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		71FEE180253FB7100017C0BB /* MyCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCourseViewController.swift; sourceTree = "<group>"; };
+		71FEE189253FBA610017C0BB /* MycourseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MycourseModel.swift; sourceTree = "<group>"; };
+		71FEE18A253FBA610017C0BB /* MycourseSkillInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MycourseSkillInfo.swift; sourceTree = "<group>"; };
 		7316D5FE59C73C81640CD9E2 /* Pods-uLektzSkills.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uLektzSkills.debug.xcconfig"; path = "Target Support Files/Pods-uLektzSkills/Pods-uLektzSkills.debug.xcconfig"; sourceTree = "<group>"; };
 		7D423FE4987B26A7BAAE1C6B /* Pods-uLektzSkills-uLektzSkillsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uLektzSkills-uLektzSkillsUITests.debug.xcconfig"; path = "Target Support Files/Pods-uLektzSkills-uLektzSkillsUITests/Pods-uLektzSkills-uLektzSkillsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8E088D3CBF5C0C439E10B920 /* Pods_uLektzSkillsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uLektzSkillsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +186,80 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		71062346253E24C800F08616 /* LoginModel */ = {
+			isa = PBXGroup;
+			children = (
+				7106234A253E24FE00F08616 /* LoginInstitution.swift */,
+				71062349253E24FE00F08616 /* LoginMycourseid.swift */,
+				71062347253E24FD00F08616 /* LoginRootClass.swift */,
+				71062348253E24FD00F08616 /* LoginUserInfo.swift */,
+			);
+			path = LoginModel;
+			sourceTree = "<group>";
+		};
+		7131127C253F5591007B68BB /* UIview */ = {
+			isa = PBXGroup;
+			children = (
+				7137DD032537626600685970 /* Main.storyboard */,
+				7137DD082537626700685970 /* LaunchScreen.storyboard */,
+			);
+			path = UIview;
+			sourceTree = "<group>";
+		};
+		7131127D253F55AC007B68BB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7137DCFD2537626600685970 /* AppDelegate.swift */,
+				7137DCFF2537626600685970 /* SceneDelegate.swift */,
+				7137DD012537626600685970 /* ViewController.swift */,
+				7137DD302537A48200685970 /* SignUpViewController.swift */,
+				7137DD762537E14B00685970 /* SignupOTPViewController.swift */,
+				713AB10F25390E08000429CB /* SuccessViewController.swift */,
+				713AB11425391324000429CB /* ForgetPasswordViewController.swift */,
+				71062340253DF58F00F08616 /* ForgetEmailMobileViewController.swift */,
+				7154BCAF253F4CA800A08B19 /* HomeViewController.swift */,
+				71FEE160253F78050017C0BB /* CartViewController.swift */,
+				71FEE180253FB7100017C0BB /* MyCourseViewController.swift */,
+				715245A52540A14900D1C75D /* SettingsViewController.swift */,
+				715245AA2540A4B100D1C75D /* AccountViewController.swift */,
+				715245B22540C17000D1C75D /* NotificationViewController.swift */,
+				715245CB2541196500D1C75D /* SearchViewController.swift */,
+				71618DD72541FEF700278AE4 /* CourseDetailViewController.swift */,
+				71FEE165253F7E2B0017C0BB /* CartTableViewCell.swift */,
+				715245C62540F92300D1C75D /* CustomCollectionViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7131127E253F55E8007B68BB /* ModelClass */ = {
+			isa = PBXGroup;
+			children = (
+				713626FB2543A26B00ADEB27 /* CourseDetailModel */,
+				715245B72540F57300D1C75D /* HomePageModel */,
+				71FEE188253FBA410017C0BB /* MyCourseModel */,
+				71FEE154253F5A330017C0BB /* MycartModel */,
+				71062346253E24C800F08616 /* LoginModel */,
+			);
+			path = ModelClass;
+			sourceTree = "<group>";
+		};
+		713626FB2543A26B00ADEB27 /* CourseDetailModel */ = {
+			isa = PBXGroup;
+			children = (
+				713627192543A67500ADEB27 /* courseDetailsAssessment.swift */,
+				7136271C2543A67600ADEB27 /* courseDetailsAssessmentJson.swift */,
+				7136271A2543A67600ADEB27 /* courseDetailsCourseDetail.swift */,
+				713627172543A67500ADEB27 /* courseDetailsFile.swift */,
+				7136271D2543A67600ADEB27 /* courseDetailsModel.swift */,
+				7136271E2543A67700ADEB27 /* courseDetailsOption.swift */,
+				7136271F2543A67700ADEB27 /* courseDetailsOutput.swift */,
+				7136271B2543A67600ADEB27 /* courseDetailsReport.swift */,
+				713627182543A67500ADEB27 /* courseDetailsResult.swift */,
+				713627162543A67400ADEB27 /* courseDetailsTopic.swift */,
+			);
+			path = CourseDetailModel;
+			sourceTree = "<group>";
+		};
 		7137DCF12537626600685970 = {
 			isa = PBXGroup;
 			children = (
@@ -143,19 +285,12 @@
 		7137DCFC2537626600685970 /* uLektzSkills */ = {
 			isa = PBXGroup;
 			children = (
-				7137DCFD2537626600685970 /* AppDelegate.swift */,
-				7137DCFF2537626600685970 /* SceneDelegate.swift */,
-				7137DD012537626600685970 /* ViewController.swift */,
-				7137DD302537A48200685970 /* SignUpViewController.swift */,
-				7137DD762537E14B00685970 /* SignupOTPViewController.swift */,
-				713AB10F25390E08000429CB /* SuccessViewController.swift */,
-				713AB11425391324000429CB /* ForgetPasswordViewController.swift */,
-				71062340253DF58F00F08616 /* ForgetEmailMobileViewController.swift */,
-				7137DD032537626600685970 /* Main.storyboard */,
-				7137DD062537626700685970 /* Assets.xcassets */,
-				7137DD082537626700685970 /* LaunchScreen.storyboard */,
-				7137DD0B2537626700685970 /* Info.plist */,
+				7131127E253F55E8007B68BB /* ModelClass */,
+				7131127C253F5591007B68BB /* UIview */,
+				7131127D253F55AC007B68BB /* Controllers */,
 				71C23BCC253A12A0009A56AB /* constantFile */,
+				7137DD062537626700685970 /* Assets.xcassets */,
+				7137DD0B2537626700685970 /* Info.plist */,
 			);
 			path = uLektzSkills;
 			sourceTree = "<group>";
@@ -178,6 +313,17 @@
 			path = uLektzSkillsUITests;
 			sourceTree = "<group>";
 		};
+		715245B72540F57300D1C75D /* HomePageModel */ = {
+			isa = PBXGroup;
+			children = (
+				715245BB2540F5A700D1C75D /* MixedCourseFreeCourse.swift */,
+				715245B92540F5A700D1C75D /* MixedCourseLiveCourse.swift */,
+				715245B82540F5A700D1C75D /* MixedCourseModel.swift */,
+				715245BA2540F5A700D1C75D /* MixedCourseNewRelease.swift */,
+			);
+			path = HomePageModel;
+			sourceTree = "<group>";
+		};
 		71C23BCC253A12A0009A56AB /* constantFile */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +331,26 @@
 				71C23BC7253A1298009A56AB /* Constant.swift */,
 			);
 			path = constantFile;
+			sourceTree = "<group>";
+		};
+		71FEE154253F5A330017C0BB /* MycartModel */ = {
+			isa = PBXGroup;
+			children = (
+				71FEE155253F5A530017C0BB /* MycartCartInfo.swift */,
+				71FEE157253F5A530017C0BB /* MycartOutput.swift */,
+				71FEE156253F5A530017C0BB /* MycartResult.swift */,
+				71FEE158253F5A530017C0BB /* MycartRootClass.swift */,
+			);
+			path = MycartModel;
+			sourceTree = "<group>";
+		};
+		71FEE188253FBA410017C0BB /* MyCourseModel */ = {
+			isa = PBXGroup;
+			children = (
+				71FEE189253FBA610017C0BB /* MycourseModel.swift */,
+				71FEE18A253FBA610017C0BB /* MycourseSkillInfo.swift */,
+			);
+			path = MyCourseModel;
 			sourceTree = "<group>";
 		};
 		87BDC7A118165BAD5216E200 /* Frameworks */ = {
@@ -435,15 +601,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71FEE166253F7E2B0017C0BB /* CartTableViewCell.swift in Sources */,
 				7137DD772537E14B00685970 /* SignupOTPViewController.swift in Sources */,
+				713627282543A67700ADEB27 /* courseDetailsOption.swift in Sources */,
+				713627202543A67700ADEB27 /* courseDetailsTopic.swift in Sources */,
+				715245AB2540A4B100D1C75D /* AccountViewController.swift in Sources */,
+				71FEE18B253FBA610017C0BB /* MycourseModel.swift in Sources */,
 				71C23BB2253A0488009A56AB /* AlertUtility.swift in Sources */,
+				71FEE18C253FBA610017C0BB /* MycourseSkillInfo.swift in Sources */,
+				7106234C253E24FE00F08616 /* LoginUserInfo.swift in Sources */,
+				7106234B253E24FE00F08616 /* LoginRootClass.swift in Sources */,
 				71062341253DF58F00F08616 /* ForgetEmailMobileViewController.swift in Sources */,
+				715245A62540A14900D1C75D /* SettingsViewController.swift in Sources */,
+				71FEE159253F5A530017C0BB /* MycartCartInfo.swift in Sources */,
+				7154BCB0253F4CA800A08B19 /* HomeViewController.swift in Sources */,
+				715245CC2541196500D1C75D /* SearchViewController.swift in Sources */,
 				71C23BC8253A1298009A56AB /* Constant.swift in Sources */,
+				713627252543A67700ADEB27 /* courseDetailsReport.swift in Sources */,
 				7137DD022537626600685970 /* ViewController.swift in Sources */,
 				7137DCFE2537626600685970 /* AppDelegate.swift in Sources */,
+				71FEE181253FB7100017C0BB /* MyCourseViewController.swift in Sources */,
+				7106234E253E24FE00F08616 /* LoginInstitution.swift in Sources */,
+				71618DD82541FEF700278AE4 /* CourseDetailViewController.swift in Sources */,
 				7137DD312537A48200685970 /* SignUpViewController.swift in Sources */,
+				715245BC2540F5A800D1C75D /* MixedCourseModel.swift in Sources */,
+				71FEE161253F78050017C0BB /* CartViewController.swift in Sources */,
+				71FEE15C253F5A530017C0BB /* MycartRootClass.swift in Sources */,
+				71FEE15B253F5A530017C0BB /* MycartOutput.swift in Sources */,
+				713627212543A67700ADEB27 /* courseDetailsFile.swift in Sources */,
 				713AB11525391324000429CB /* ForgetPasswordViewController.swift in Sources */,
+				7106234D253E24FE00F08616 /* LoginMycourseid.swift in Sources */,
+				715245B32540C17000D1C75D /* NotificationViewController.swift in Sources */,
+				71FEE15A253F5A530017C0BB /* MycartResult.swift in Sources */,
+				713627272543A67700ADEB27 /* courseDetailsModel.swift in Sources */,
+				713627222543A67700ADEB27 /* courseDetailsResult.swift in Sources */,
+				715245BF2540F5A800D1C75D /* MixedCourseFreeCourse.swift in Sources */,
+				713627262543A67700ADEB27 /* courseDetailsAssessmentJson.swift in Sources */,
+				715245C72540F92300D1C75D /* CustomCollectionViewCell.swift in Sources */,
+				713627232543A67700ADEB27 /* courseDetailsAssessment.swift in Sources */,
 				713AB11025390E08000429CB /* SuccessViewController.swift in Sources */,
+				715245BE2540F5A800D1C75D /* MixedCourseNewRelease.swift in Sources */,
+				713627292543A67700ADEB27 /* courseDetailsOutput.swift in Sources */,
+				713627242543A67700ADEB27 /* courseDetailsCourseDetail.swift in Sources */,
+				715245BD2540F5A800D1C75D /* MixedCourseLiveCourse.swift in Sources */,
 				7137DD002537626600685970 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -624,6 +824,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = uLektzSkills/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -644,6 +845,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = uLektzSkills/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

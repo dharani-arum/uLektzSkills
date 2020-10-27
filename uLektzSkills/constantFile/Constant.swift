@@ -7,14 +7,13 @@
 
 import Foundation
 import UIKit
+import Alamofire
+
 class Constants {
-static let LOGIN = "https://www.ulektz.com/myaccountAPI/api.php"
+static let baseUrl = "https://www.ulektz.com/myaccountAPI/api.php"
     static let myColor = UIColor.systemGray3
 
-    
-    
-    
-    
+  
 }
 func validate(phone: String) -> Bool
 {
@@ -29,4 +28,20 @@ func isValidEmail(_ email: String) -> Bool {
     return emailPred.evaluate(with: email)
 }
 
+class Singleton {
+    
+    static let sharedInstance = Singleton()
+      var loginModel = [LoginRootClass]()
+    var myCartModel = [MycartRootClass]()
+    var mycourseModel = [MycourseModel]()
+    var homeMixedcourseModel = [MixedCourseModel]()
+    var coursedetModel = [courseDetailsModel]()
 
+}
+
+struct Connectivity {
+  static let sharedInstance = NetworkReachabilityManager()!
+  static var isConnectedToInternet:Bool {
+      return self.sharedInstance.isReachable
+    }
+}

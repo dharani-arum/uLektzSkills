@@ -7,7 +7,11 @@ target 'uLektzSkills' do
   
   pod 'SwiftyJSON'
 pod 'SCLAlertView'
+pod 'FloatRatingView', '~> 4'
+
   pod 'Alamofire', '~> 4.5'
+pod 'SDWebImage', '~> 4.0'
+
 
 
   # Pods for uLektzSkills

@@ -1,24 +1,34 @@
 PODS:
   - Alamofire (4.9.1)
+  - FloatRatingView (4.0)
   - SCLAlertView (0.8)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
+  - FloatRatingView (~> 4)
   - SCLAlertView
+  - SDWebImage (~> 4.0)
   - SwiftyJSON
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - FloatRatingView
     - SCLAlertView
+    - SDWebImage
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  FloatRatingView: bb6bdddfbeec51b1d387b4bd50abc27b4dfccd48
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 81ef78977be3df041b52d03d367549cfb06f3a9b
+PODFILE CHECKSUM: 64317ec8a0d6080a5ead5fa2ca026c565f7e510b
 
 COCOAPODS: 1.9.3
